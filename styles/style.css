@@ -9,11 +9,12 @@
 
 header,
 main {
+    overflow-x: hidden;
     max-width: 1320px;
     margin: auto;
 }
 
-.color-red {
+.red-color {
     color: #F00;
 }
 
@@ -21,7 +22,7 @@ section {
     margin-bottom: 120px;
 }
 
-.heading-text {
+.big-text {
     color: #070211;
     font-family: Merriweather;
     font-size: 48px;
@@ -31,16 +32,14 @@ section {
 
 
 /* banner related style */
-.banner {
+.celebration-banner {
     background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../resources/Banner\ Image.png');
     background-repeat: no-repeat;
-
     background-position: center;
     border-radius: 16px;
-
 }   
 
-.banner-title {
+.banner-heading-alt {
     color: #FFF;
     text-align: center;
     font-family: Merriweather;
@@ -50,7 +49,7 @@ section {
     padding: 170px 530px 0px 530px;
 }
 
-.banner-heading {
+.heading-celebration {
     color: #FFF;
     text-align: center;
     font-family: Merriweather;
@@ -116,7 +115,7 @@ section {
     height: 500px;
     flex-shrink: 0;
     margin-top: -50px;
-    margin-left: 350px;
+    margin-left: 300px;
    
 }
 
@@ -187,53 +186,21 @@ section {
 }
 
 
-/* time .time-date-section */
+/* .time-date-section */
 .time-date-section {
-    width: 100%;
-    height: 400px;
-    width: 1200px;
-    flex-shrink: 0;
-    border-radius: 10px;
     background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
-    margin-left: 110px;
-    /* margin-right: 100px; */
-   padding-top: 30px;
-}
-.time-text {
-    font-family: Inter, sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    margin-left: 80px;
-    margin-right: 50px;
-}
-
-.place-date-time {
-    font-family: Inter;
     text-align: center;
+    padding: 100px 300px;
+    font-family: inter;
     font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 56px;
-    text-transform: capitalize; 
+    font-weight: 600px;
+    border-radius: 16px;
 }
 
-
-.place-date-time .place,
-.place-date-time .date,
-.place-date-time .time {
-    color: red;
-}
-
-
-
-.frame {
-    text-align: center;
-    margin-top: 20px;
-    border-radius: 5px;
-}
 .join-now-button {
     text-decoration: none;
-    color: white;
+    background-color: #F00;
+    color: #FFF;
     transition: transform 0.3s ease, background-color 0.3s ease;
     display: inline-block;
     padding: 10px 20px;
@@ -246,26 +213,9 @@ section {
 }
 
 
-.frame button {
-    color: #FFF;
-    background-color: #F00;
-    border: none;
-    padding: 15px 40px;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 5px;
-}
-
-.frame button:hover {
-    color: #FFF; 
-    background-color: #900;
-}
 
 
-/* coming soon offer style */
+
 /* New offer style */
 .special-offer-container {
     display: flex;
@@ -328,10 +278,63 @@ section {
     margin-top: 40px;
 }
 
+/* extra section */
+/* holyday sale related style */
+.special-offer-holiday {
+    text-align: center;
+}
+
+.holyday-sale-title {
+    color: #070211;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.holyday-sale-heading {
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 72px;k
+    font-weight: 900;
+    margin: 16px 0 28px 0;
+}
+
+.holyday-sale-description {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 126px;
+    margin-bottom: 70px;
+}
+.holyday-sale-image-container{
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../resources/Rectangle\ 2.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.holyday-sale-box{
+    position: relative;
+}
+.holyday-sale-profile-pic{
+    position: relative;
+    bottom: -5px;
+}
+.discount-image{
+    position: absolute;
+    bottom: 300px;
+    right: 280px;
+    /* left: 1130px;
+    margin-top: 70px; */
+}
+
+
+
 
 /* Fourth section styles */
 .fourth-section {
-    width: 1320px;
+    width: 1200px;
     padding: 100px 80px; 
     display: flex;
     flex-direction: column;
@@ -388,16 +391,10 @@ section {
 
 /* Fifth section styles */
 .fifth-section {
-    width: 100%;
-    height: 482px;
-    width: 1200px;
-    flex-shrink: 0;
+    text-align: center;
     border-radius: 16px;
     background: rgba(255, 0, 0, 0.05);
-    margin-left: 100px;
-    /* margin-right: 100px; */
-   padding-top: 30px;
-   margin-bottom: 100px;
+    padding: 80px 210px;
 }
 
 .subscribe-container {
