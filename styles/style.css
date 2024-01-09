@@ -1,59 +1,68 @@
-body {
-    margin: 0;
-    overflow-x: hidden;
+/* some common class */
+.font-merriweather {
+    font-family: 'Merriweather', serif;
 }
 
-.header-container {
-    width: 100%;
-    height:600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-    padding: 30px 10px;
-    border-radius: 16px;
+.font-inter {
+    font-family: 'Inter', sans-serif;
 }
 
-.header-container img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    filter: brightness(70%);
+header,
+main {
+    max-width: 1320px;
+    margin: auto;
 }
 
+.color-red {
+    color: #F00;
+}
 
-.text-overlay {
-    position: absolute;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #FFF;
+section {
+    margin-bottom: 120px;
+}
+
+.heading-text {
+    color: #070211;
     font-family: Merriweather;
-    filter: brightness(300%);
-}
-
-.text-overlay h1 {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.text-overlay h2 {
-    width: 632px;
-    font-size: 72px;
-    font-style: normal;
+    font-size: 48px;
     font-weight: 900;
-    line-height: 95px; 
-    margin: 0 auto;
+    margin: 0px;
 }
-.text-overlay h1,
-.text-overlay h2 {
-    color: #FFF; 
-    filter: brightness(150%); 
-    
+
+
+/* banner related style */
+.banner {
+    background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../resources/Banner\ Image.png');
+    background-repeat: no-repeat;
+
+    background-position: center;
+    border-radius: 16px;
+
+}   
+
+.banner-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding: 170px 530px 0px 530px;
 }
+
+.banner-heading {
+    color: #FFF;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 72px;
+    font-weight: 900;
+    margin: 20px;
+    padding: 0 340px 170px 340px;
+}
+
+
+
+/* .second-section */
 
 .second-section {
     padding: 0 10px;
@@ -110,6 +119,8 @@ body {
     margin-left: 350px;
    
 }
+
+/* .third-section */
 
 .third-section {
     width: 100%;
@@ -254,6 +265,70 @@ body {
 }
 
 
+/* coming soon offer style */
+/* New offer style */
+.special-offer-container {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.special-offer-1 {
+    width: 33.33%;
+}
+
+.top-offer-text {
+    color: #F00;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.special-heading {
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.special-offer-text {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+}
+
+.special-offer-2 {
+    width: 33.33%;
+}
+
+.special-offer-img {
+    border-radius: 50%;
+    padding: 20px;
+    border: 15px solid #F00;
+    margin-top: 45px;
+}
+
+.special-offer-3 {
+    width: 33.33%;
+}
+
+.special-year {
+    color: #F00;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.festive-image {
+    margin-top: 40px;
+}
+
+
 /* Fourth section styles */
 .fourth-section {
     width: 1320px;
@@ -322,6 +397,7 @@ body {
     margin-left: 100px;
     /* margin-right: 100px; */
    padding-top: 30px;
+   margin-bottom: 100px;
 }
 
 .subscribe-container {
@@ -390,126 +466,78 @@ body {
 
 
 /* Footer section styles */
-.footer-section {
-    align-items: center;
+
+footer {
+   height: 350px;
     background-color: #070211;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    padding: 10px;
-    width: 100%;
-    margin-top: 50px;
+    padding: 120px 140px;
 }
 
-.address-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-shrink: 0;
-    height: 8rem;
-    margin: 0rem 13.5rem 5rem 0rem;
-    width: calc(100% - 13.5rem);
-}
-
-.address {
+.contact-details,
+.footer-details {
     color: #FFF;
     font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 40px;
-    margin-left: 100px;
 }
 
-.contact-details {
-    color: #FFF;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-left: 300px;
-}
-
-
-.contact-details {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    margin-left: 100px;
-    padding-top: 20px;
-}
-
-.phone,
-.website {
-    display: flex;
-    align-items: center;
-    margin-left: 0.5rem; 
-    font-size: 20px;
-}
-
-.phone img,
-.website img {
-    margin-right: 0.3rem;
-}
-
-.social-icons {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; 
-}
-
-.social-icons img {
-    margin-right: 10px; 
-    width: 50px; 
-    height: auto; 
-    cursor: pointer;
-}
-
-
- @media screen and (max-width: 768px) {
-    .social-icons {
-        justify-content: center; 
-      
-    }
-
-    .social-icons img {
-        margin-right: 8px; 
-        width: 25px; 
-    }
-} 
-
-.copyright-section {
+.contact-section {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    flex-shrink: 0;
-    margin-top: 2rem; 
 }
 
-.copyright {
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 80px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+hr {
+    opacity: 15%;
+    margin: 50px 0px;
+}
+
+/* Social Media icon */
+.social-icons-section,
+.social-links {
+    text-align: center;
+    margin-right: 24px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+}
+
+/* Footer Bottom Section */
+  .footer-bottom .footer-details {
     color: #FFF;
     font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 40px;
-    margin-right: 950px;
 }
 
-.unsubscribe-button {
+.footer-bottom .footer-details a {
+    display: inline-block;
     background-color: #070211;
     color: #FFF;
-    border: none;
-    padding: 20 px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
     transition: background-color 0.3s ease;
-}
+} */
 
-.unsubscribe-button:hover {
+.footer-bottom .footer-details a:hover {
     background-color: #F00;
 }
-
-
 
