@@ -1,11 +1,4 @@
 /* some common class */
-.font-merriweather {
-    font-family: 'Merriweather', serif;
-}
-
-.font-inter {
-    font-family: 'Inter', sans-serif;
-}
 
 header,
 main {
@@ -44,7 +37,9 @@ section {
     text-align: center;
     font-family: Merriweather;
     font-size: 32px;
+    font-style: normal;
     font-weight: 400;
+    line-height: normal;
     margin-bottom: 0px;
     padding: 170px 530px 0px 530px;
 }
@@ -54,6 +49,7 @@ section {
     text-align: center;
     font-family: Merriweather;
     font-size: 72px;
+    font-style: normal;
     font-weight: 900;
     margin: 20px;
     padding: 0 340px 170px 340px;
@@ -310,6 +306,9 @@ cursor: pointer;
     position: absolute;
     bottom: 300px;
     right: 280px;
+}
+.highlight-red {
+    color: red;
 }
 
 /* Fourth section styles */
