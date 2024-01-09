@@ -122,68 +122,58 @@ section {
 /* .third-section */
 
 .third-section {
-    width: 100%;
-    height: 400px;
-    width: 1200px;
-    flex-shrink: 0;
-    padding:50px 20px;
+    max-height: 600px;
+    background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../resources/Vectorrr.png');
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    gap: 90px;
     border-radius: 16px;
-    /* background: rgba(255, 0, 0, 0.05); */
-    margin-left: 100px;
-    margin-bottom:200px;
-    /* margin-right: 100px; */
-   padding-top: 30px;
+    margin-bottom: 180px;
 }
-.overlay-container {
-    position: relative;
+.left-side{
+    padding: 126px 0 126px 126px;
 }
-
-.overlay-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    filter: brightness(50%);
+.right-side{
+    padding-right: 126px;
 }
 
-
-.text-container,
-.button-container {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: translate(-20%, -20%);
-}
-
-.text-container h1 {
-    width: 642px;
+.welcome-head{
     color: #FFF;
-    font-family: Merriweather;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 88px;
-    letter-spacing: 7.04px;
-    position: relative;
+font-family: Merriweather;
+font-size: 64px;
+font-style: normal;
+font-weight: 900;
+line-height: 88px; /* 137.5% */
+letter-spacing: 7.04px;
+margin-bottom: 0px;
 }
-
-.text-container p {
-    width: 697px;
+.welcome-text{
     color: rgba(255, 255, 255, 0.80);
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    position: relative;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+margin-bottom: 48px;
 }
 
-.right-image {
-    position: absolute;
-    top: 10%;
-    right: 5%;
-    max-width: 150px; 
-    filter: brightness(150%); 
+.join-now-button{
+    color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+cursor: pointer;
 }
+.join-now-button:hover {
+    background-color: rgb(132, 0, 255);
+}
+
+
 
 
 /* .time-date-section */
@@ -223,11 +213,11 @@ section {
     align-items: center;
 }
 
-.special-offer-1 {
+.upcoming-offer-1 {
     width: 33.33%;
 }
 
-.top-offer-text {
+.featured-offer {
     color: #F00;
     font-family: Inter;
     font-size: 24px;
@@ -235,38 +225,29 @@ section {
     margin-bottom: 0px;
 }
 
-.special-heading {
-    color: #070211;
-    font-family: Merriweather;
-    font-size: 48px;
-    font-weight: 900;
-    text-transform: capitalize;
-    margin-top: 16px;
-    margin-bottom: 0px;
-}
-
-.special-offer-text {
+.upcoming-details {
     color: rgba(7, 2, 17, 0.60);
     font-family: Inter;
     font-size: 20px;
+    
 }
 
-.special-offer-2 {
+.upcoming-offer-2 {
     width: 33.33%;
 }
 
-.special-offer-img {
+.offer-preview-image {
     border-radius: 50%;
     padding: 20px;
     border: 15px solid #F00;
     margin-top: 45px;
 }
 
-.special-offer-3 {
+.upcoming-offer-3 {
     width: 33.33%;
 }
 
-.special-year {
+.upcoming-year {
     color: #F00;
     font-family: Inter;
     font-size: 48px;
@@ -278,28 +259,28 @@ section {
     margin-top: 40px;
 }
 
+
 /* extra section */
-/* holyday sale related style */
-.special-offer-holiday {
+.exclusive-holiday-offer {
     text-align: center;
 }
 
-.holyday-sale-title {
+.unique-offer-title {
     color: #070211;
     font-family: Inter;
     font-size: 24px;
     font-weight: 500;
 }
 
-.holyday-sale-heading {
+.exclusive-offer-heading {
     color: #070211;
     font-family: Merriweather;
-    font-size: 72px;k
+    font-size: 72px;
     font-weight: 900;
     margin: 16px 0 28px 0;
 }
 
-.holyday-sale-description {
+.exclusive-offer-description {
     color: rgba(7, 2, 17, 0.60);
     font-family: Inter;
     font-size: 20px;
@@ -307,30 +288,29 @@ section {
     padding: 0 126px;
     margin-bottom: 70px;
 }
-.holyday-sale-image-container{
+
+.unique-holiday-image-set {
     display: flex;
     justify-content: space-between;
     background-image: url('../resources/Rectangle\ 2.png');
     background-position: bottom;
     background-repeat: no-repeat;
 }
-.holyday-sale-box{
+
+.distinctive-offer-box {
     position: relative;
 }
-.holyday-sale-profile-pic{
+
+.distinctive-offer-profile-pic {
     position: relative;
     bottom: -5px;
 }
-.discount-image{
+
+.exclusive-discount-image {
     position: absolute;
     bottom: 300px;
     right: 280px;
-    /* left: 1130px;
-    margin-top: 70px; */
 }
-
-
-
 
 /* Fourth section styles */
 .fourth-section {
